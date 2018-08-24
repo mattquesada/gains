@@ -1,19 +1,16 @@
 import React from 'react';
 import './LeftCard.css';
 
-const LeftCard = () => {
-  const alertSomething = () => {
-    alert("button pressed");
-  }
+// component imports
+import ButtonPanel from './addIngredientForm/AddIngredientForm';
 
-  return(
+const LeftCard = () => {
+  return (
     <div className="leftcard-wrapper">
-      <div className="card border-primary mb-3" style={{"max-width": "40rem" }}>
-        <div className="card-header">Ingredients</div>
+      <div className="card border-primary mb-3" style={{ "max-width": "40rem" }}>
+        <div className="card-header">Recipe</div>
         <div className="card-body">
-          <div class="btn-group-vertical" data-toggle="buttons">
-            <button type="button" class="btn btn-primary" onClick={alertSomething}>Add Ingredient</button>
-          </div>
+          <ButtonPanel />
         </div>
       </div>
     </div>
