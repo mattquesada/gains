@@ -1,0 +1,33 @@
+.header-wrapper {
+  .navbar {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #151a1e;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; // remove standard href style 
+  align-items: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+li a:hover {
+  background-color: #B65012;
+  border-radius: 5px;
+}

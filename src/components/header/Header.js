@@ -1,12 +1,15 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 
 const Header = () => {
   return (
-    <div className="header-wrapper">
-      <div className="jumbotron">
-        <h1 className="display-3">Welcome to Gains!</h1>
-        <p className="lead">Add or subtract macronutrients from your recipes for optimal intake</p>
+    <div className='header-wrapper'>
+      <div className='navbar'>
+        <ul>
+          <li><a href='#about'>About</a></li>
+          <li><a href='#ingredientSearch'>Ingredient Search</a></li>
+          <li><a className='active' href='#recipeSearch'>Recipe Search</a></li>
+        </ul>
       </div>
     </div>
   );
